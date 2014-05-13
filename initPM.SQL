@@ -4,7 +4,7 @@ CREATE TABLE FormT (
 /*
 	Form Template for both 'work' and 'task'. All these field for one field in the form.
 */
-		form            text,	    -- which form that this field for
+		form_id         text,	    -- which form that this field for
 		field_name      text,	    -- field name, it is SQL field name
 		display_name    text,       -- display name for user view
 		field_type      text,	    -- SQL field type, 'integer', 'text'...
@@ -23,8 +23,31 @@ CREATE TABLE FormT (
 		
 		
 		/* Event Handlers */
-		onCreated       text,       -- Event handler: when new form
-		onLoad          text,       -- Event handler: when load a form
+		onclick		text,
+		ondbclick	text,
+		onmousedown	text,
+		onmousemove	text,
+		onmouseover	text,
+		onmouseout	text,
+		onmouseup	text,
+
+		onkeydown	text,
+		onkeypress	text,
+		onkeyup		text,
+
+		onabort		text,
+		onerror		text,
+		onload		text,
+		onresize	text,
+		onscroll	text,
+		onunload	text,
+
+		onblur		text,
+		onchange	text,
+		onfocus		text,
+		onreset		text,
+		onselect	text,
+		onsubmit	text,
 		/* Event Handler finished */
 		
 		break_line      boolean,    -- like flow layout, break current line
